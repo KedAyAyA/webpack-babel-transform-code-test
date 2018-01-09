@@ -1,4 +1,4 @@
-// import 'babel-polyfill'
+import 'babel-polyfill'
 
 import moduleA from './modulea.js'
 import * as moduleB from './moduleb.js'

@@ -4,7 +4,7 @@ import moduleA from './modulea.js'
 import * as moduleB from './moduleb.js'
 
 moduleB.test()
-var c = moduleB.a
+// var c = moduleB.a
 console.log(moduleA)
 
 export default class A {

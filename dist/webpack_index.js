@@ -65,59 +65,105 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modulea_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moduleb_js__ = __webpack_require__(2);
-// import 'babel-polyfill'
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); // import 'babel-polyfill'
 
-__WEBPACK_IMPORTED_MODULE_1__moduleb_js__["b" /* test */]()
-var c = __WEBPACK_IMPORTED_MODULE_1__moduleb_js__["a"]
-console.log(__WEBPACK_IMPORTED_MODULE_0__modulea_js__["a" /* default */])
+var _modulea = __webpack_require__(1);
 
-class A {
-  static test () {
-    console.log('hehe')
-    [1, 2].map(item => item * 2)
+var _modulea2 = _interopRequireDefault(_modulea);
+
+var _moduleb = __webpack_require__(2);
+
+var moduleB = _interopRequireWildcard(_moduleb);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+moduleB.test();
+// var c = moduleB.a
+console.log(_modulea2.default);
+
+var A = function () {
+  function A() {
+    _classCallCheck(this, A);
   }
-}
-/* harmony export (immutable) */ __webpack_exports__["default"] = A;
 
+  _createClass(A, null, [{
+    key: 'test',
+    value: function test() {
+      console.log('hehe')[(1, 2)].map(function (item) {
+        return item * 2;
+      });
+    }
+  }]);
+
+  return A;
+}();
+
+exports.default = A;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* unused harmony export matest */
-class ModuleA {
-  test () {
-    console.log('test')
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.matest = matest;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ModuleA = function () {
+  function ModuleA() {
+    _classCallCheck(this, ModuleA);
   }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = ModuleA;
 
+  _createClass(ModuleA, [{
+    key: 'test',
+    value: function test() {
+      console.log('test');
+    }
+  }]);
 
-function matest () {
-  console.log('ModuleA test')
+  return ModuleA;
+}();
+
+exports.default = ModuleA;
+function matest() {
+  console.log('ModuleA test');
 }
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = test;
-const a = 1
-/* harmony export (immutable) */ __webpack_exports__["a"] = a;
 
-function test () {
-  console.log('test')
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.test = test;
+var a = exports.a = 1;
+function test() {
+  console.log('test');
 }
 
 /***/ })

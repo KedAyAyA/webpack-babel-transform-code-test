@@ -1,10 +1,5 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "ie": 8
-      },
-      "include": ["es6.map"]
-    }]
+    ["env"]
   ]
 }

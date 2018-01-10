@@ -1,10 +1,9 @@
 // import 'babel-polyfill'
 
 import moduleA from './modulea.js'
-import * as moduleB from './moduleb.js'
+import { a } from './moduleb.js'
 
-moduleB.test()
-var c = moduleB.a
+var c = a
 console.log(moduleA)
 
 export default class A {

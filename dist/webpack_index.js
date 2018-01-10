@@ -76,7 +76,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-__WEBPACK_IMPORTED_MODULE_1__moduleb_js__["b" /* test */]()
 var c = __WEBPACK_IMPORTED_MODULE_1__moduleb_js__["a"]
 console.log(__WEBPACK_IMPORTED_MODULE_0__modulea_js__["a" /* default */])
 
@@ -112,13 +111,18 @@ function matest () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["b"] = test;
+/* unused harmony export test */
 const a = 1
 /* harmony export (immutable) */ __webpack_exports__["a"] = a;
 
 function test () {
   console.log('test')
 }
+
+/* unused harmony default export */ var _unused_webpack_default_export = ({
+  a,
+  test
+});
 
 /***/ })
 /******/ ]);

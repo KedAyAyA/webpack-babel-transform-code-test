@@ -1,4 +1,13 @@
 Some test code to learn how webpack & babel work during compiling.
+
+Every test code has own branch.
+
+You can run ```git checkout xxx``` to see every demo.
+
+You can use ```webpack``` to compile using webpack if you install it global
+
+You can use ```npm run build``` to compile using only babel.
+
 - webpack-only-index
 
   Use webpack only.

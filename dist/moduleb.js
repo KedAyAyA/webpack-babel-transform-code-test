@@ -1,15 +1,9 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.test = test;
-var a = exports.a = 1;
-function test() {
+export var a = 1;
+export function test() {
   console.log('test');
 }
 
-exports.default = {
+export default {
   a: a,
   test: test
 };

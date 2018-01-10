@@ -71,22 +71,36 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modulea_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__moduleb_js__ = __webpack_require__(2);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 // import 'babel-polyfill'
 
 
 
 
-var c = __WEBPACK_IMPORTED_MODULE_1__moduleb_js__["a"]
-console.log(__WEBPACK_IMPORTED_MODULE_0__modulea_js__["a" /* default */])
+var c = __WEBPACK_IMPORTED_MODULE_1__moduleb_js__["a"];
+console.log(__WEBPACK_IMPORTED_MODULE_0__modulea_js__["a" /* default */]);
 
-class A {
-  static test () {
-    console.log('hehe')
-    [1, 2].map(item => item * 2)
+var A = function () {
+  function A() {
+    _classCallCheck(this, A);
   }
-}
-/* harmony export (immutable) */ __webpack_exports__["default"] = A;
 
+  _createClass(A, null, [{
+    key: 'test',
+    value: function test() {
+      console.log('hehe')[(1, 2)].map(function (item) {
+        return item * 2;
+      });
+    }
+  }]);
+
+  return A;
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (A);
 
 /***/ }),
 /* 1 */
@@ -94,16 +108,30 @@ class A {
 
 "use strict";
 /* unused harmony export matest */
-class ModuleA {
-  test () {
-    console.log('test')
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ModuleA = function () {
+  function ModuleA() {
+    _classCallCheck(this, ModuleA);
   }
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = ModuleA;
+
+  _createClass(ModuleA, [{
+    key: 'test',
+    value: function test() {
+      console.log('test');
+    }
+  }]);
+
+  return ModuleA;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (ModuleA);
 
 
-function matest () {
-  console.log('ModuleA test')
+function matest() {
+  console.log('ModuleA test');
 }
 
 /***/ }),
@@ -111,17 +139,16 @@ function matest () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return a; });
 /* unused harmony export test */
-const a = 1
-/* harmony export (immutable) */ __webpack_exports__["a"] = a;
-
-function test () {
-  console.log('test')
+var a = 1;
+function test() {
+  console.log('test');
 }
 
 /* unused harmony default export */ var _unused_webpack_default_export = ({
-  a,
-  test
+  a: a,
+  test: test
 });
 
 /***/ })
